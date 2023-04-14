@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* section un */
+
+/* ___________________ */
+
+body{
+    background-color: black;
+}
+
+/* la nav */
+
+nav{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  
+  nav ul{
+    padding: 5px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10%;
+    flex-wrap: wrap;
+    width: 70%;
+    align-content: center;
+  }
+  
+  nav .burger{
+    opacity: 0;
+    position: absolute;
+    width: 5%;
+    height: 4vh;
+    justify-content: center; 
+  }
+  
+  nav .burger img{ 
+    width: 2rem;
+    padding: 2%;
+    background-color: red;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav li{
+    margin-left: 7px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 15px;
+    font-size: 1.2rem;
+  }
+  
+  nav .logo img{
+    justify-content: start;
+    width: 8rem;
+  }
+  
+  .nav-border {
+    border-bottom: 3px solid white;
+  }
+  
+  
+/* ____________________ */
+
+
+.one .img {
+    background-image: url('../assets/Mockup_termine2.png');
+    width: 100%;
+    min-width: 100%;
+    height: 100vh;
+    background-size: cover ;
+
+}
+
+.one .img .logo img{
+    padding-left: 60%;
+}
+
+/* _________________ */
+
+
+/* la zone de lecture */
+.music-player{
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40%;
+    height: 19vh;
+    color: white;
+    padding: 5px;
+}
+
+.music-player img{
+    width: 6rem;
+    flex: 1;
+    padding: 6px;
+}
+
+.track-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    width: 100%;
+}
+/* ___________ */
+
+.album{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.album .i {
+    
+    animation: slide-in 2s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        right: 100%;
+        opacity: 0;
+    }
+    to {
+        right: 50%;
+        opacity: 1;
+    }
+}
+
+.i img {
+    max-width: 100%;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+/* .aside{
+    margin-left: 10%;
+    width: 30%;
+    padding: 15px;
+    padding-left: 3%;
+    border-top: 1px solid #9F0000;
+    border-left: 1px solid #9F0000;
+    border-bottom: 1px solid #9F0000;
+    border-radius: 5%;
+} */
+
+.i img{
+    width: 70%;
+}
+
+.two{
+    color: white;
+}
+
+
+.two .etoile{
+    padding: 20px;
+    margin-right: 20%;
+}
+
+.two .etoile img{
+    width: 5rem;
+    opacity: 0;
+    animation: fade-in-out 2s infinite;
+}
+
+
+@keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+
+.two h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    padding: 5%;
+    color: red;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+}
+
+/*.info .bac-img{
+    background-image: url('../assets/iggypop-scaled-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 14rem;
+    height: 40vh;
+    justify-items: end;
+}
+
+.info img{
+    position: relative;
+    width: 16rem;
+    margin-top: -40px;
+    height: 35vh;
+}*/
+/* 
+.info-container{
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.program-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-container{
+    position: relative;
+    display:flex;
+
+}
+
+.img-2{
+    position: relative;
+    z-index: 1;
+    min-width: 200px;
+    width: 200px;
+}
+
+.img-1{
+    position: absolute;
+    min-width: 200px;
+    width: 200px;
+    top: 0;
+    left:0;
+    z-index: 2;
+} */
+
+
+/* ________________ */
+
+/* footer */
+
+footer{
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    color: white;
+}
+
+footer .logo_footer img{
+    justify-content: start;
+    width: 5rem;
+    margin-left: 15px;
+}
+
+footer .reseaux{
+    width: 10%;
+    display: flex;
+    /* flex-wrap:wrap; */
+}
+
+footer .reseaux img{
+    width: 2rem;
+    justify-items: space-between;
+}
+
+/* __________ */
+
+
+/* dechirure 2 */
+body .dechire2 img{
+    height: 10vh;
+    width: 100%;
+}
+
+
+/* responsive */
+
+
+@media screen and (max-width: 930px) {
+    .one .img .logo img{
+        padding-left: 63%;
+        width: 13rem;
+    }
+
+    .album{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        /*margin: 0 auto;*/
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .one .img {
+        height: 80vh;
+        background-size: cover ;
+    
+    }
+
+    nav .burger img{ 
+        width: 1.5rem;
+        margin: 0 auto;
+    }
+
+    nav .burger{
+        opacity: 1;
+        margin-left: 85%;
+    }
+
+    nav.loaded .burger {
+        opacity: 1;
+        transition-delay: 0.5s;
+      }
+
+    .one .img .logo img{
+        padding-left: 60%;
+        width: 10rem;
+    }
+
+    .one .img .logo .btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .two{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .two h1{
+        font-size: 2rem;
+    }
+
+    .album{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        /*margin: 0 auto;*/
+    }
+    nav ul{
+        display: none;
+    }
+
+
+    footer .reseaux img{
+        width: 1 rem;
+    }
+  }

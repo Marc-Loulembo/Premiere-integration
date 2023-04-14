@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+}
+
+/* section un */
+
+/* ___________________ */
+
+body{
+    background-color: black;
+}
+
+/* la nav */
+
+
+nav{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  
+  nav ul{
+    padding: 5px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10%;
+    flex-wrap: wrap;
+    width: 70%;
+    align-content: center;
+  }
+  
+  nav .burger{
+    opacity: 0;
+    position: absolute;
+    width: 5%;
+    height: 4vh;
+    justify-content: center; 
+  }
+  
+  nav .burger img{ 
+    width: 2rem;
+    padding: 2%;
+    background-color: red;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav li{
+    margin-left: 7px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 15px;
+    font-size: 1.2rem;
+  }
+  
+  nav .logo img{
+    justify-content: start;
+    width: 8rem;
+  }
+  
+  .nav-border {
+    border-bottom: 3px solid white;
+  }
+
+/* __________ */
+
+/* section one */
+
+.one .img {
+    background-image: url('../assets/mame-musica-iggy-pop-i-70-anni-delliguana-del-rock-1140x674.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover ;
+
+}
+
+
+.one .img .logo img{
+    padding-left: 60%;
+}
+
+
+/* _________________ */
+
+/* sectionn two */
+
+.two .etoile{
+    padding: 20px;
+    margin-right: 20%;
+}
+
+.two .etoile img{
+    width: 5rem;
+}
+
+.two h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    padding: 5%;
+    color: red;
+}
+
+/* parent 1  */
+
+.parent{
+    display: flex;
+    color: white;
+}
+
+.parent .text{
+    width: 70%;
+}
+
+.parent .images{
+    width: 30%;
+}
+
+.parent .images .img1 img{
+    width: 15rem;
+    border-radius: 20%;
+    margin-left: 15%;
+}
+
+.parent .images .etoile2 img{
+    width: 5rem;
+    border-radius: 15%;
+    margin-top: 10%;
+}
+/* _____ */
+
+/* parent 2 */
+
+.parent2{
+    margin-top: 5%;
+    display: flex;
+}
+
+.parent2 .text{
+    width: 60%;
+}
+
+.parent2 .images{
+    width: 30%;
+}
+
+.parent2 .images .img1 img{
+    width: 15rem;
+    border-radius: 20%;
+    margin-right: 20%;
+}
+
+.parent2 .images .etoile2 img{
+    width: 5rem;
+    border-radius: 15%;
+    margin-top: 10%;
+}
+
+.parent2 .text2 img{
+    width: 35rem;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+/* footer */
+
+footer{
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    color: white;
+}
+
+footer .logo_footer img{
+    justify-content: start;
+    width: 5rem;
+    margin-left: 15px;
+}
+
+footer .reseaux{
+    width: 10%;
+    display: flex;
+}
+
+footer .reseaux img{
+    width: 2rem;
+    justify-items: space-between;
+}
+/* __________ */
+
+
+/* dechirure 2 */
+body .dechire2 img{
+    height: 15vh;
+    width: 100%;
+}
+
+/* responsive */
+
+
+@media screen and (max-width: 930px) {
+    .one .img .logo img{
+        padding-left: 63%;
+        width: 13rem;
+    }
+
+    .two .etoile{
+        padding: 10px;
+        margin-right: 10%;
+    }
+    
+    .two .etoile img{
+        width: 2.5rem;
+    }
+
+    .parent .images .etoile2 img{
+        width: 2.5em;
+    }
+    
+    
+    .parent .text{
+        width: 50%;
+    }
+
+    .parent .images{
+        width: 30%;
+    }
+
+    .parent{
+        display: column;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .parent .images .img1 img{
+        width: 15rem;
+        border-radius: 20%;
+        margin-left: 15%;
+    }
+
+    .parent2 .images .etoile2 img{
+        width: 2.5rem;
+        border-radius: 15%;
+        margin-top: 10%;
+    }
+
+    .parent2 .text2{
+        width: 50%;
+    }
+
+    .parent2 .images{
+        width: 30%;
+    }
+
+    .parent2{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .parent2 .text2 img{
+        width: 25rem;
+        margin-left: 10%;
+    }
+
+    .parent2 .images .etoile2 img{
+        width: 2.5rem;
+        border-radius: 15%;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .one .img {
+        height: 80vh;
+        background-size: cover ;
+    
+    }
+
+    .one .img .logo img{
+        padding-left: 60%;
+        width: 10rem;
+    }
+
+    .one .img .logo .btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .two{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .two h1{
+        font-size: 2rem;
+    }
+.two .etoile{
+        padding: 10px;
+        margin-right: 10%;
+    }
+    
+    .two .etoile img{
+        width: 2.5rem;
+    }
+
+    .parent .images .etoile2 img{
+        width: 2.5em;
+    }
+    
+    
+    .parent .text{
+        width: 50%;
+    }
+
+    .parent .images{
+        width: 30%;
+    }
+
+    .parent{
+        display: column;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .parent .images .img1 img{
+        width: 15rem;
+        border-radius: 20%;
+        margin-left: 15%;
+    }
+
+    .parent2 .images .etoile2 img{
+        width: 1.5rem;
+        border-radius: 15%;
+        margin-top: 10%;
+    }
+
+
+    .parent2 .text2{
+        width: 50%;
+    }
+
+    .parent2 .images .img1 img{
+        width: 10rem;
+    }
+
+    .parent2 .images{
+        width: 10rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .parent2 .images{
+        width: 20%;
+    }
+
+    .parent2{
+        display: column;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text2 h1{
+        font-size: 1rem;
+    }
+    
+    .parent2 .text2 img{
+        width: 18rem;
+    }
+    
+    .parent2 .images .etoile2 img{
+        width: 1.5rem;
+        border-radius: 15%;
+        margin-top: 10%;
+    }
+    nav ul{
+        display: none;
+    }
+
+
+    footer .reseaux img{
+        width: 1 rem;
+    }
+  }

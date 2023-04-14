@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+}
+
+/* section un */
+
+/* ___________________ */
+
+body{
+    background-color: black;
+}
+
+/* la nav */
+
+
+nav{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  
+  nav ul{
+    padding: 5px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10%;
+    flex-wrap: wrap;
+    width: 70%;
+    align-content: center;
+  }
+  
+  nav .burger{
+    opacity: 0;
+    position: absolute;
+    width: 5%;
+    height: 4vh;
+    justify-content: center; 
+  }
+  
+  nav .burger img{ 
+    width: 2rem;
+    padding: 2%;
+    background-color: red;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav li{
+    margin-left: 7px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 15px;
+    font-size: 1.2rem;
+  }
+  
+  nav .logo img{
+    justify-content: start;
+    width: 8rem;
+  }
+  
+  .nav-border {
+    border-bottom: 3px solid white;
+  }
+
+/* __________ */
+
+/* section one */
+ .dec{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+ }
+
+ .dec img{
+    width: 4rem;
+ }
+
+ .dec .btq img{
+    width: 20rem;
+ }
+
+ /* _______________ */
+
+ /* section deux */
+
+ .two .articles-un{
+    padding: 2%;
+ }
+
+ .two .articles-un img{
+    width: 8rem;
+    background-color: white;
+ }
+
+ h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    padding: 5%;
+    color: red;
+}
+
+ .two .articles-un .sweat img{
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+ }
+
+ .two .articles-un .chapeau img{
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    height: 30vh;
+ }
+
+
+ .two .iggy{
+    padding: 1%;
+    display: flex;
+    /* justify-content: space-around; */
+    margin: 0 auto;
+ }
+
+.two .iggy img{
+    width: 25.5rem;
+    height: 10rem;
+}
+
+/* SECTION THREE */
+
+.three{
+    padding: 2%;
+    margin: 0 auto;
+}
+.three .cards {
+display: flex;
+margin: 0 auto;
+margin-left: 4%;
+justify-content: center;
+}
+
+.three .cards img{
+    width: 20rem;
+}
+
+.three .accessoir {
+display: flex;
+margin: 0 auto;
+margin-top: 5%;
+margin-left: 10%;
+justify-content: center;
+}
+
+.three .accessoir img{
+    width: 20rem;
+}
+/* footer */
+
+footer{
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    color: white;
+}
+
+footer .logo_footer img{
+    justify-content: start;
+    width: 5rem;
+    margin-left: 15px;
+}
+
+footer .reseaux{
+    width: 10%;
+    display: flex;
+}
+
+footer .reseaux img{
+    width: 2rem;
+    justify-items: space-between;
+}
+/* __________ */
+
+
+/* dechirure 2 */
+body .dechire2 img{
+    height: 15vh;
+    width: 100%;
+}
+
+/* responsive */
+
